@@ -104,6 +104,101 @@ button:hover {
   margin-top: 0;
 }
 
+.content-section {
+  margin-top: 24px;
+  background: #1a1f2b;
+  border-radius: 12px;
+  padding: 16px;
+}
+
+.content-section h2 {
+  margin-top: 0;
+}
+
+.content-section ul {
+  margin: 0;
+  padding-left: 18px;
+  color: #c9cfda;
+}
+
+.breadcrumb {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.breadcrumb a {
+  color: #c9cfda;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.breadcrumb a:hover {
+  color: #ffffff;
+}
+
+.faq-item + .faq-item {
+  margin-top: 12px;
+}
+
+.faq-item h3 {
+  margin: 0 0 6px;
+  font-size: 16px;
+}
+
+.faq-item p {
+  margin: 0;
+  color: #c9cfda;
+  font-size: 14px;
+}
+
+.footer {
+  margin-top: 28px;
+  padding-top: 16px;
+  border-top: 1px solid #2a3244;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+}
+
+.footer-links a {
+  color: #c9cfda;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.footer-links a:hover {
+  color: #ffffff;
+}
+
+.footer-meta {
+  margin: 0;
+  color: #94a3b8;
+  font-size: 12px;
+}
+
+.page {
+  background: #1a1f2b;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
+}
+
+.page h1 {
+  margin-top: 0;
+}
+
+.page p,
+.page li {
+  color: #c9cfda;
+  line-height: 1.6;
+}
 .ai-challenge {
   background: #141a24;
   border-radius: 12px;

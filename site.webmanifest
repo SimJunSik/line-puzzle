@@ -1,0 +1,8 @@
+{
+  "name": "Line Puzzle - 한 줄 퍼즐",
+  "short_name": "Line Puzzle",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0f1115",
+  "theme_color": "#0f1115"
+}

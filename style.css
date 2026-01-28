@@ -1,0 +1,240 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #0f1115;
+  color: #f5f7fb;
+}
+
+.container {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 32px 16px 48px;
+}
+
+.header h1 {
+  margin: 0 0 8px;
+  font-size: 32px;
+}
+
+.header p {
+  margin: 0 0 24px;
+  color: #c9cfda;
+}
+
+.game-panel {
+  background: #1a1f2b;
+  border-radius: 12px;
+  padding: 16px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
+}
+
+.info {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.badge {
+  background: #262c3a;
+  padding: 8px 12px;
+  border-radius: 999px;
+  font-size: 14px;
+}
+
+#game-canvas {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  background: #0b0e14;
+  border: 1px solid #2a3244;
+  display: block;
+}
+
+.controls {
+  display: flex;
+  gap: 12px;
+  margin-top: 12px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+button {
+  background: #4a7dff;
+  border: none;
+  color: white;
+  padding: 10px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+button:hover {
+  background: #3766e6;
+}
+
+.level-select {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  color: #c9cfda;
+}
+
+.level-select select {
+  background: #0b0e14;
+  border: 1px solid #2a3244;
+  border-radius: 8px;
+  color: #f5f7fb;
+  padding: 6px 10px;
+}
+
+.ranking {
+  margin-top: 24px;
+  background: #1a1f2b;
+  border-radius: 12px;
+  padding: 16px;
+}
+
+.ranking h2 {
+  margin-top: 0;
+}
+
+.ai-challenge {
+  background: #141a24;
+  border-radius: 12px;
+  padding: 12px;
+  margin-bottom: 12px;
+  border: 1px solid #2a3244;
+}
+
+.ai-challenge h3 {
+  margin: 0 0 6px;
+  font-size: 16px;
+}
+
+.ai-challenge p {
+  margin: 0 0 8px;
+  color: #c9cfda;
+  font-size: 13px;
+}
+
+.ai-challenge-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.ai-settings {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-bottom: 10px;
+}
+
+.ai-setting-group {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.ai-setting-label {
+  font-size: 13px;
+  color: #c9cfda;
+}
+
+.ai-buttons {
+  display: flex;
+  gap: 8px;
+}
+
+.ai-btn {
+  background: #262c3a;
+  color: #c9cfda;
+  border-radius: 999px;
+  padding: 6px 12px;
+  font-weight: 600;
+}
+
+.ai-btn.active {
+  background: #4a7dff;
+  color: white;
+}
+
+.badge.win {
+  background: #14532d;
+  color: #bbf7d0;
+}
+
+.badge.lose {
+  background: #7f1d1d;
+  color: #fecaca;
+}
+
+.ranking-tabs {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.tab-btn {
+  background: #262c3a;
+  color: #c9cfda;
+  border-radius: 999px;
+  padding: 8px 14px;
+  font-weight: 600;
+}
+
+.tab-btn.active {
+  background: #4a7dff;
+  color: white;
+}
+
+.ranking-panel {
+  display: none;
+}
+
+.ranking-panel.active {
+  display: block;
+}
+
+.submit-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.submit-row input {
+  background: #0b0e14;
+  border: 1px solid #2a3244;
+  border-radius: 8px;
+  padding: 8px 10px;
+  color: #f5f7fb;
+}
+
+.submit-row button[disabled] {
+  background: #2b3b5d;
+  cursor: not-allowed;
+}
+
+.hint {
+  font-size: 13px;
+  color: #94a3b8;
+}
+
+#ai-status {
+  min-height: 16px;
+}
+
+#ranking-list-local,
+#ranking-list-global {
+  margin: 0;
+  padding-left: 20px;
+  color: #c9cfda;
+}

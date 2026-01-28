@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Line Puzzle - 한 줄 퍼즐</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <main class="container">
+      <header class="header">
+        <h1>한 줄 퍼즐</h1>
+        <p>시작점에서 도착점까지 한 줄로 연결하세요. 벽을 넘으면 실패!</p>
+      </header>
+
+      <section class="game-panel">
+        <div class="info">
+          <div class="badge">
+            <span id="label-time-limit">제한 시간</span>:
+            <span id="time-limit">15</span>s
+          </div>
+          <div class="badge">
+            <span id="label-time-left">남은 시간</span>:
+            <span id="time-left">15</span>s
+          </div>
+          <div class="badge">
+            <span id="label-status">상태</span>:
+            <span id="status">대기</span>
+          </div>
+        </div>
+        <canvas id="game-canvas" width="800" height="500"></canvas>
+        <div class="controls">
+          <button id="reset-btn">다시 시작</button>
+          <button id="prev-level-btn">이전 레벨</button>
+          <button id="next-level-btn">다음 레벨</button>
+          <label class="level-select">
+            <span id="label-level-select">레벨 선택</span>
+            <select id="level-select"></select>
+          </label>
+          <button id="ai-run-btn">AI 플레이</button>
+          <span id="ai-status" class="hint"></span>
+        </div>
+      </section>
+
+      <section class="ranking">
+        <h2 id="ranking-title">랭킹 (최단 시간)</h2>
+        <div class="ranking-tabs">
+          <button class="tab-btn active" data-tab="local">로컬</button>
+          <button class="tab-btn" data-tab="global">글로벌</button>
+        </div>
+        <div class="ai-challenge" id="ai-challenge">
+          <h3 id="ai-challenge-title">AI 챌린지</h3>
+          <p id="ai-challenge-desc">
+            AI 기록을 넘기면 승리! 각 레벨별 AI 기준 기록이 있습니다.
+          </p>
+          <div class="ai-settings">
+            <div class="ai-setting-group">
+              <span id="ai-speed-label" class="ai-setting-label">AI 속도</span>
+              <div class="ai-buttons" id="ai-speed-buttons">
+                <button class="ai-btn" data-speed="fast">빠름</button>
+                <button class="ai-btn" data-speed="normal">보통</button>
+                <button class="ai-btn" data-speed="slow">천천히</button>
+              </div>
+            </div>
+          </div>
+          <div class="ai-challenge-row">
+            <div class="badge">
+              AI 기록: <span id="ai-benchmark">--</span>
+            </div>
+            <div class="badge">
+              내 최고 기록: <span id="player-best">--</span>
+            </div>
+            <div class="badge" id="ai-result">결과: 대기</div>
+          </div>
+        </div>
+        <div class="ranking-panel active" id="ranking-local">
+          <ol id="ranking-list-local"></ol>
+        </div>
+        <div class="ranking-panel" id="ranking-global">
+          <div class="submit-row">
+            <input
+              id="nickname-input"
+              type="text"
+              maxlength="12"
+              placeholder="닉네임 (선택)"
+            />
+            <button id="submit-score-btn" disabled>기록 제출</button>
+            <span id="submit-status" class="hint"></span>
+          </div>
+          <ol id="ranking-list-global"></ol>
+        </div>
+      </section>
+    </main>
+
+    <script src="./levels-data.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>

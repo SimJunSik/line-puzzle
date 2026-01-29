@@ -333,3 +333,318 @@ button:hover {
   padding-left: 20px;
   color: #c9cfda;
 }
+
+/* Site Header Navigation */
+.site-header {
+  background: #0f1115;
+  border-bottom: 1px solid #2a3244;
+  padding: 0 16px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.site-nav {
+  max-width: 980px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 56px;
+}
+
+.nav-logo {
+  font-size: 18px;
+  font-weight: 700;
+  color: #f5f7fb;
+  text-decoration: none;
+}
+
+.nav-logo:hover {
+  color: #4a7dff;
+}
+
+.nav-links {
+  display: flex;
+  gap: 24px;
+}
+
+.nav-links a {
+  color: #c9cfda;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 8px 0;
+  border-bottom: 2px solid transparent;
+  transition: color 0.2s, border-color 0.2s;
+}
+
+.nav-links a:hover {
+  color: #f5f7fb;
+}
+
+.nav-links a.active {
+  color: #4a7dff;
+  border-bottom-color: #4a7dff;
+}
+
+/* Content Article Styles */
+.content-article {
+  line-height: 1.7;
+}
+
+.content-article h1 {
+  font-size: 28px;
+  margin-bottom: 16px;
+}
+
+.content-article h2 {
+  font-size: 22px;
+  margin-top: 32px;
+  margin-bottom: 12px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #2a3244;
+}
+
+.content-article h3 {
+  font-size: 18px;
+  margin-top: 20px;
+  margin-bottom: 8px;
+  color: #e5e7eb;
+}
+
+.article-intro {
+  font-size: 16px;
+  color: #94a3b8;
+  margin-bottom: 24px;
+}
+
+/* Table of Contents */
+.table-of-contents {
+  background: #141a24;
+  border-radius: 8px;
+  padding: 16px 20px;
+  margin-bottom: 24px;
+  border: 1px solid #2a3244;
+}
+
+.table-of-contents h2 {
+  font-size: 16px;
+  margin: 0 0 12px !important;
+  padding: 0 !important;
+  border: none !important;
+}
+
+.table-of-contents ul {
+  margin: 0;
+  padding-left: 20px;
+}
+
+.table-of-contents li {
+  margin-bottom: 6px;
+}
+
+.table-of-contents a {
+  color: #4a7dff;
+  text-decoration: none;
+}
+
+.table-of-contents a:hover {
+  text-decoration: underline;
+}
+
+/* Level Tips */
+.level-tip {
+  background: #141a24;
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 16px;
+  border-left: 3px solid #4a7dff;
+}
+
+.level-tip h3 {
+  margin-top: 0;
+  color: #f5f7fb;
+}
+
+.level-tip p {
+  margin: 8px 0;
+}
+
+.level-tip ul {
+  margin: 8px 0 0;
+}
+
+/* Mistake Tips */
+.mistake-tip {
+  background: #1f1215;
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 16px;
+  border-left: 3px solid #ef4444;
+}
+
+.mistake-tip h3 {
+  margin-top: 0;
+  color: #fca5a5;
+}
+
+/* Contact Types */
+.contact-type {
+  background: #141a24;
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 16px;
+}
+
+.contact-type h3 {
+  margin-top: 0;
+}
+
+.contact-box {
+  background: #141a24;
+  border-radius: 8px;
+  padding: 24px;
+  text-align: center;
+  border: 1px solid #2a3244;
+}
+
+.contact-email {
+  font-size: 20px;
+  font-weight: 600;
+  color: #4a7dff;
+  margin: 0;
+}
+
+/* Info Table */
+.info-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 16px 0;
+}
+
+.info-table th,
+.info-table td {
+  text-align: left;
+  padding: 10px 12px;
+  border-bottom: 1px solid #2a3244;
+}
+
+.info-table th {
+  background: #141a24;
+  color: #e5e7eb;
+  font-weight: 600;
+}
+
+.info-table td {
+  color: #c9cfda;
+}
+
+/* CTA Section */
+.cta-section {
+  text-align: center;
+  padding: 32px 16px;
+  background: linear-gradient(135deg, #1a2332 0%, #141a24 100%);
+  border-radius: 12px;
+  margin-top: 32px;
+}
+
+.cta-section h2 {
+  border: none !important;
+  padding: 0 !important;
+}
+
+.cta-button {
+  display: inline-block;
+  background: #4a7dff;
+  color: white;
+  padding: 14px 28px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 16px;
+  transition: background 0.2s;
+}
+
+.cta-button:hover {
+  background: #3766e6;
+}
+
+.cta-button.secondary {
+  background: #262c3a;
+  margin-left: 12px;
+}
+
+.cta-button.secondary:hover {
+  background: #3a4252;
+}
+
+.cta-buttons {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.cta-buttons .cta-button.secondary {
+  margin-left: 0;
+}
+
+/* Legal Document Styles */
+.legal-document .legal-intro {
+  font-size: 15px;
+  color: #94a3b8;
+  margin-bottom: 24px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid #2a3244;
+}
+
+.legal-footer {
+  margin-top: 32px;
+  padding-top: 16px;
+  border-top: 1px solid #2a3244;
+  font-size: 14px;
+  color: #94a3b8;
+}
+
+/* Page specific adjustments */
+.page.container {
+  margin-top: 24px;
+}
+
+/* Link Styles in Content */
+.content-article a {
+  color: #4a7dff;
+  text-decoration: none;
+}
+
+.content-article a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  .nav-links {
+    gap: 16px;
+  }
+
+  .nav-links a {
+    font-size: 13px;
+  }
+
+  .content-article h1 {
+    font-size: 24px;
+  }
+
+  .content-article h2 {
+    font-size: 20px;
+  }
+
+  .cta-buttons {
+    flex-direction: column;
+  }
+
+  .cta-button.secondary {
+    margin-left: 0;
+  }
+}
